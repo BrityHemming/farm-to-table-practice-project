@@ -1,0 +1,235 @@
+/* reset*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+/*Gen style*/
+.html{
+    font-size: 62.5%;/*Should we use both font-size on body and html?*/
+    
+}
+.body{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-family: 'PT Sans',sans-serif;
+    color:#444;  
+    background-color: white; 
+    border: 1px white; 
+    width: max-content;
+    margin:0 2rem;
+}
+h1,h2,h3{
+    font-family: 'Nunito',sans-serif;
+    letter-spacing:.3rem;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+font-size: 2rem;
+}
+/*Navigation Bar*/
+.navi{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+letter-spacing: 4px;
+width: 100%;
+background-color: rgba(255,255,255,0.8);
+padding-top: 1%;
+position: fixed;
+
+}
+.navi i{
+  width: 5%; 
+   color: #444;
+   font-weight: 400;
+   font-size: 3.5rem;
+  padding:1% 3%;
+}
+.navi nav{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 1.2rem;
+    text-decoration: 2px dotted red;
+    /* border:2px solid firebrick; */
+}
+.navi nav a:hover{
+    color: #fcb131;
+}
+/*Header*/
+header{
+    height: 90vh;
+background-image: url(https://farm-to-table-practice-site.netlify.app/images/header.jpg);
+background-size: cover;
+display: flex;
+justify-content: center;
+text-align: center;
+color: #444;
+
+}
+.intro{
+    width: 40%;
+    margin-top: 10rem;
+
+}
+/*Products*/
+#Farm h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+#Farm .contain{
+display: flex;
+justify-content: space-evenly;
+
+}
+#Farm .products{
+width: 22%;
+text-align: center;
+border: 3px solid #444;
+padding: 1rem;
+
+}
+#Farm .products i{
+    height: 5rem;
+    width: 5rem;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #444;
+}
+.clear{
+    background-image: url(https://farm-to-table-practice-site.netlify.app/images/dirt.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 40vh;
+    padding:2rem;
+    margin-top: 2rem;
+}
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#About{
+    display: flex;
+    margin-top: 2rem;
+border:2px solid #444;
+flex-direction: column;
+width: 60%;
+text-align: center;
+padding:3%;
+font-size: 1.2rem;
+font-family: 'PT Sans', sans-serif;
+line-height: 1.5;
+}
+#About i{
+font-size: 4rem;
+
+margin-top: 1rem;
+color: #444;
+}
+.features{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+.Farm{
+    background-image: url(https://farm-to-table-practice-site.netlify.app/images/barn.jpg);
+    width: 40%;
+    height: 40vh;
+    margin: 2% 0;
+    align-items: flex-end;
+    
+
+}
+.Cooking{
+background-image: url(https://farm-to-table-practice-site.netlify.app/images/cook.jpg);
+width: 40%;
+height: 40vh;
+margin: 2% 0;
+align-items: flex-end;
+}
+.Produce{
+background-image: url(https://farm-to-table-practice-site.netlify.app/images/produce.jpg);
+width: 40%;
+height: 40vh;
+margin: 2% 0;
+align-items: flex-end;
+}
+.Animals{
+    background-image: url(https://farm-to-table-practice-site.netlify.app/images/sheep.jpg);
+    width: 40%;
+    height: 40vh;
+    margin: 2% 0;
+    align-items: flex-end;
+}
+.hide{
+opacity: 0;
+
+}
+.hide:hover{
+    opacity: 1;
+}
+.visit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+#Contact{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    /* width: 45%; */
+    
+}
+#Contact i{
+    font-size: 3.5rem;
+    color: #444;
+    
+}
+.find{
+    justify-content: center;
+    width: 45%;
+}
+.call:hover{
+color: #fcb131;
+}
+address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    width: 44%;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.tractor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44%;
+    line-height: 2;
+}
+footer{
+    display: flex;
+    background-color: #fcb131;
+    color:white;
+    justify-content: space-evenly;
+    height: 8rem;
+}
+.connect{
+    width:23%;
+}
+.navb{
+    display: flex;
+    flex-direction: column;
+}
