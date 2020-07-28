@@ -199,8 +199,9 @@ opacity: 0;
 .find{
     justify-content: center;
     width: 45%;
+    color: #444;
 }
-.call:hover{
+.call :hover{
 color: #fcb131;
 }
 address{
@@ -219,6 +220,9 @@ address{
     width: 44%;
     line-height: 2;
 }
+.tractor img{
+    width: 75%;
+}
 footer{
     display: flex;
     background-color: #fcb131;
@@ -229,7 +233,21 @@ footer{
 .connect{
     width:23%;
 }
+.connect i{
+    font-weight: 400;
+}
 .navb{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+navb :hover{
+    color: #444;
+}
+.copyr{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
