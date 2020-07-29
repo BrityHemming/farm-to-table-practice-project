@@ -1,0 +1,285 @@
+body {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    /*line-height: 3rem;*/
+    letter-spacing: .13rem;
+    color: #373636;
+    
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    position: fixed;
+    opacity: 90%;
+    z-index: 100;
+
+}
+
+.fa-farm {
+    font-size: 3.45rem;
+    color: #373636;
+    display: flex;
+    justify-content: flex-start;
+    
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+}
+
+.navbar {
+    width: 55%;
+    margin-left: 44%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30%;
+    font-size: 1.2rem;
+    margin-top: -2%;
+}
+
+a {
+    padding: 0% 1%;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    
+    top: 40%;
+    letter-spacing: .13rem;
+    color: #373636;
+    
+}
+
+a:hover {
+    color: #FEC528;
+}
+
+#home {
+    width: 100%;
+    display: flex;
+    box-align: center;
+    align-items: center;
+    box-pack: center;
+    justify-content: center;
+    margin: center;
+    background-image: url(header.jpg);
+    display: box;
+    
+}
+
+.cows {
+    width: 100%;
+    height: 92vh;
+    margin-top: 5rem;
+    position: relative;
+    object-fit: cover;
+
+}
+
+h1 {
+   position: absolute;
+   /* margin: 0 auto;
+    top: 48%;
+    left: 40%; */
+    font-size: 2.9rem;
+    bottom: 46%;
+    letter-spacing: 20%;
+}
+
+.ethical {
+    position: absolute;
+    bottom: 37%;
+    font-size: 2rem;
+    
+}
+
+#farm-fresh {
+    font-size: 200%;
+
+}
+
+.fresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 5%;
+}
+
+.boxes {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3% 1%;
+
+}
+
+.box1 {
+    width: 20%;
+    margin: 2%;
+    display: flex;
+    padding: 2%;
+    padding-top: 5%;
+    border: .2rem solid black;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80%;
+    line-height: 1rem;
+}
+
+.fa-cow, .fa-egg, .fa-seedling, .fa-wheat {
+    font-size: 3rem;
+}
+
+.window {
+    width: 100%;
+    background-image: url("dirt.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dirthands {
+    width: 100%;
+    
+}
+
+#about {
+    width: 55%;
+    height: 60%;
+    margin: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5%;
+    padding-bottom: 1%;
+    border: .2rem solid black;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+
+    letter-spacing: auto;
+}
+
+.fa-sheep {
+    font-size: 3.5rem;
+}
+
+.sheep-box {
+    text-justify: inter-word;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.boxofimgs {
+    width: 100%;
+    margin: 1%;
+    margin-left: 1%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.barnset, .cooking, .veg, .cuties {
+    width: 40%;
+    height: 40vh;
+    margin: 1% 4% 1%;
+    overflow: hidden;
+
+}
+
+#contact {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    
+}
+
+.cvu {
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    letter-spacing: .3rem;
+}
+
+.canada {
+    display: flex;
+    margin-top: 15%;
+    margin-left: 8%;
+    line-height: -1rem;
+    
+}
+
+.fa-tractor {
+    font-size: 4rem;
+    
+}
+
+.fua {
+    font-size: 2.5rem;
+    display: flex;
+    
+}
+
+.address {
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', italic;
+    line-height: 2.7rem;
+}
+
+.tractor {
+    width: 65%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin: 5% 10%;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #FEC528;
+    color: white;
+    display: flex;
+
+}
+
+.socials {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.fa-instagram, .fa-facebook-square, .fa-twitter-square {
+    font-size: 5rem;
+    margin: -4% 6%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 12rem;
+    align-items: baseline;
+
+    
+}
+
+.nav2 > a {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+}
+
+.copyright {
+    display: flex;
+    align-items: baseline;
+    margin-top: 17%;
+}
