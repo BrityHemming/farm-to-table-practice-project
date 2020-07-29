@@ -1,0 +1,184 @@
+body {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    line-height: 3rem;
+    letter-spacing: .13rem;
+    color: #373636;
+    
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    opacity: 90%;
+    z-index: 100;
+    margin: 4rem white;
+    padding: 2rem white;
+
+}
+
+.fa-farm {
+    font-size: 3.45rem;
+    color: #373636;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    /*margin-top: -2% white;*/
+    margin-right: 3rem white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+a {
+    padding: 0% 4.5%;
+    text-decoration: none;
+    line-height: 1rem;
+    letter-spacing: .13rem;
+    color: #373636;
+    
+}
+
+a:hover {
+    color: #FEC528;
+}
+
+#home {
+    width: 100%;
+    display: flex;
+    box-align: center;
+    align-items: center;
+    box-pack: center;
+    justify-content: center;
+    margin: center;
+    background-image: url(header.jpg);
+    display: box;
+   
+}
+
+.cows {
+    width: 100%;
+    height: 30%;
+    margin-top: 5.5rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+h1 {
+   position: absolute;
+   /* margin: 0 auto;
+    top: 48%;
+    left: 40%; */
+    font-size: 3rem;
+    top: center;
+}
+
+.ethical {
+    position: absolute;
+    bottom: 20rem;
+    font-size: 2rem;
+    
+}
+
+#farm-fresh {
+    font-size: 200%;
+
+}
+
+.fresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 5%;
+}
+
+.boxes {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3% 1%;
+
+}
+
+.box1 {
+    width: 20%;
+    margin: 2%;
+    display: flex;
+    padding: 2%;
+    padding-top: 5%;
+    border: .2rem solid black;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80%;
+    line-height: 1rem;
+}
+
+.fa-cow, .fa-egg, .fa-seedling, .fa-wheat {
+    font-size: 3rem;
+}
+
+.window {
+    width: 100%;
+    height: 12vh;
+    background-image: url(dirt.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+#about {
+    width: 55%;
+    height: 60%;
+    margin: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5%;
+    padding-bottom: 1%;
+    border: .2rem solid black;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    
+    letter-spacing: auto;
+}
+
+.fa-sheep {
+    font-size: 3.5rem;
+}
+
+.sheep-box {
+    text-justify: inter-word;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.boxofimgs {
+    width: 100%;
+    margin: 1%;
+    margin-left: 1%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.barnset, .cooking, .veg, .cuties {
+    width: 40%;
+    height: 40vh;
+    margin: 1% 4% 1%;
+    overflow: hidden;
+
+
+}
