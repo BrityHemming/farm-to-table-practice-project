@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.0rem;
+  line-height: 1.5;
+  background-color: #d8d8d8;
+  color: rgba(43, 58, 50, 0.815);
+}
+
+h1, h2, h3 {
+}
+
+h1 {
+  font-size: 5.0rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.0rem;
+}
+
+section {
+  padding: 4% 0;
+}
+
+footer {
+  padding: 2% 0;
+}
+
+a {
+  color: rgb(64, 71, 66);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(247, 231, 12, 0.514);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.938);
+  top: 0;
+}
+
+nav .headPic {
+  width: 10%;
+}
+
+nav .headPic a {
+  color: #444;
+}
+
+nav .navLinks {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav .navLinks a {
+  color: rgba(68, 68, 68, 0.575);
+}
+
+nav .navLinks a:hover {
+  color: #f3e634;
+}
+
+#logo {
+  margin-top: 5.5%;
+  height: 90vh;
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titles {
+  width: 40%;
+  text-align: center;
+}
+
+.hero {
+  background-image: url('../images/dirt.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 40vh;
+}
+
+#products h2 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+#products .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#products .container div {
+  width: 20%;
+  text-align: center;
+  padding: 4% 0;
+  border: 3px solid #444;
+  background-color: #fff;
+}
+
+#products .container div i {
+  margin: 4% 0;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about .text {
+  width: 60%;
+  padding: 3%;
+  border: 3px solid #444;
+  background-color: #fff;
+}
+
+#about .text p {
+  text-align: justify;
+}
+
+.photos .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photos .container div {
+  width: 40%;
+  height: 40vh;
+  margin: 2% 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.photos .container div .hid {
+  background-color: #fff;
+  height: 10vh;
+  display: none;
+}
+
+.photos .container div .hid h2 {
+  margin: 4%;
+}
+
+.photos .container div:hover .hid {
+  display: block;
+}
+
+.photos .container .farm {
+  background-image: url('../images/barn.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.photos .container .cook {
+  background-image: url('../images/cook.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.photos .container .produce {
+  background-image: url('../images/produce.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.photos .container .animals {
+  background-image: url('../images/sheep.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#contact .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact .container .left,
+#contact .container .right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+
+#contact .container img {
+  width: 75%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fcb131;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #444;
+}
+
+footer h3 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+footer div {
+  width: 33%;
+}
+
+footer div nav {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fcb131;
+}
+
+footer div nav a {
+  margin: 2% 0;
+  color: #fff;
+}
+
+footer div nav a:hover {
+  color: #444;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fcb131;
+}
+
+.socialLinks a {
+  color: #fff;
+}
+
+.socialLinks a:hover {
+  color: #444;
+}
+
+.copy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.copy p {
+  margin: 0 5%;
+}
