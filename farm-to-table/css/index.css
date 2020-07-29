@@ -1,7 +1,7 @@
 body {
     width: 100%;
     font-family: 'Nunito', sans-serif;
-    line-height: 3rem;
+    /*line-height: 3rem;*/
     letter-spacing: .13rem;
     color: #373636;
     
@@ -9,12 +9,11 @@ body {
 
 header {
     width: 100%;
+    height: 10vh;
     background-color: white;
     position: fixed;
     opacity: 90%;
     z-index: 100;
-    margin: 4rem white;
-    padding: 2rem white;
 
 }
 
@@ -23,24 +22,27 @@ header {
     color: #373636;
     display: flex;
     justify-content: flex-start;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
 }
 
 .navbar {
+    width: 55%;
+    margin-left: 44%;
     display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    /*margin-top: -2% white;*/
-    margin-right: 3rem white;
+    justify-content: space-around;
+    margin-right: 30%;
     font-size: 1.2rem;
-    text-decoration: none;
+    margin-top: -2%;
 }
 
 a {
-    padding: 0% 4.5%;
+    padding: 0% 1%;
+    margin-bottom: 1rem;
     text-decoration: none;
-    line-height: 1rem;
+    
+    top: 40%;
     letter-spacing: .13rem;
     color: #373636;
     
@@ -60,15 +62,15 @@ a:hover {
     margin: center;
     background-image: url(header.jpg);
     display: box;
-   
+    
 }
 
 .cows {
     width: 100%;
-    height: 30%;
-    margin-top: 5.5rem;
+    height: 92vh;
+    margin-top: 5rem;
     position: relative;
-    overflow: hidden;
+    object-fit: cover;
 
 }
 
@@ -77,13 +79,14 @@ h1 {
    /* margin: 0 auto;
     top: 48%;
     left: 40%; */
-    font-size: 3rem;
-    top: center;
+    font-size: 2.9rem;
+    bottom: 46%;
+    letter-spacing: 20%;
 }
 
 .ethical {
     position: absolute;
-    bottom: 20rem;
+    bottom: 37%;
     font-size: 2rem;
     
 }
@@ -129,10 +132,15 @@ h1 {
 
 .window {
     width: 100%;
-    height: 12vh;
-    background-image: url(dirt.jpg);
+    background-image: url("dirt.jpg");
+    height: 500px; 
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+}
+.dirthands {
+    width: 100%;
     
 }
 
@@ -149,7 +157,7 @@ h1 {
     border: .2rem solid black;
     line-height: 1.5rem;
     font-size: 1.5rem;
-    
+
     letter-spacing: auto;
 }
 
@@ -180,5 +188,98 @@ h1 {
     margin: 1% 4% 1%;
     overflow: hidden;
 
+}
 
+#contact {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    
+}
+
+.cvu {
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    letter-spacing: .3rem;
+}
+
+.canada {
+    display: flex;
+    margin-top: 15%;
+    margin-left: 8%;
+    line-height: -1rem;
+    
+}
+
+.fa-tractor {
+    font-size: 4rem;
+    
+}
+
+.fua {
+    font-size: 2.5rem;
+    display: flex;
+    
+}
+
+.address {
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', italic;
+    line-height: 2.7rem;
+}
+
+.tractor {
+    width: 65%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin: 5% 10%;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #FEC528;
+    color: white;
+    display: flex;
+
+}
+
+.socials {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.fa-instagram, .fa-facebook-square, .fa-twitter-square {
+    font-size: 5rem;
+    margin: -4% 6%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 12rem;
+    align-items: baseline;
+
+    
+}
+
+.nav2 > a {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+}
+
+.copyright {
+    display: flex;
+    align-items: baseline;
+    margin-top: 17%;
 }
