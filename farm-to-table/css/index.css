@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     max-width:100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 /*General Styles*/
 html{
@@ -30,7 +30,7 @@ h2{
 h3{
     font-size:2.5rem;
 }
-section, footer{
+section{
     padding: 4% 0;
 }
 a{
@@ -38,6 +38,9 @@ a{
     letter-spacing:3px;
     color:#4F4F4F;
     font-family: 'PT Sans', sans-serif;
+}
+a:hover{
+    color:#fcb131;
 }
 i{
     font-size: 5rem;
@@ -119,4 +122,106 @@ header nav{
 }
 .text p{
     text-align:left;
+}
+
+/*Gallery Section Styles*/
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.gallery div{
+    width:40%;
+    height:40vh;
+    margin:4% 0;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    display:flex;
+    align-items:flex-end;
+}
+.gallery div .hide{
+    height:10vh;
+    background-color:#fff;
+    display:none;
+}
+.gallery div:hover .hide{
+    display:block;
+}
+.farm{
+    background-image:url('../images/barn.jpg');
+}
+.cook{
+    background-image:url('../images/cook.jpg');
+}
+.produce{
+    background-image: url('../images/produce.jpg');
+}
+.animals{
+    background-image: url('../images/sheep.jpg');
+}
+
+/*Contact Section Styles*/
+#contact{
+    display:flex;
+    flex-wrap:wrap;
+}
+#contact h2{
+    width:100%;
+}
+.left, .right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:4% 0;
+}
+.contact-info{
+    width:35%;
+    line-height:2;
+}
+.contact-info h3{
+    text-align:left;
+}
+.img-container{
+    width:70%;
+}
+
+/*Footer Section Styles*/
+
+footer{
+    background-color:#fcb131;
+    display:flex;
+    justify-content:space-around;
+    color:#fff;
+    padding:2% 0;
+}
+footer a{
+    color:#fff;
+}
+footer a:hover{
+    color:#4f4f4f;
+}
+footer div{
+    width:30%;
+}
+nav.social{
+    display:flex;
+    justify-content: space-between;
+    margin-top:10%;
+}
+nav.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav.main a{
+    margin: 2% 0;
+}
+.copyright{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
 }
