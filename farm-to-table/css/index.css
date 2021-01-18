@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid gray;
+
+}
+
+/* General Styles */
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #fffafa;
+}
+
+
+h1, h2 h3, h4 {
+    letter-spacing: 3px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+
+h3 {
+    font-size: 2.5rem;
+}
+
+
+section, footer {
+    padding: 4% 0;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing:  3px;
+    color: #4F4F4F;
+    font-family:'PT Sans', sans-serif;
+
+}
+
+i {
+    font-size: 5rem;
+}
+
+/* Header Section Styles  */
+
+
+header nav {
+    position: fixed; 
+    /*This keeps the nav bar at the top of the screen  */
+    width: 100%;
+    /* You set the width to 100% so that the nav bars fits side-to-side, all the time  */
+    top :0;
+    /* This will set the nav bar "0" from the top, locking it at the top  */
+    background color: rgba( 255, 255, 255, 0.8);
+    /* This is a Red, Green, Blue, color value (don't forget the 'a' as well, with an opacity of 0.8 to be slightly transparent ) */
+    display: flex;
+    /* This will allow ALL of the divs within to be FLEXBOX */
+    justify-content: space-between;
+    /* Evenly spaces all of the nav items */
+    align-items: center;
+    /* Aligns all off the content in the verticle (left to right) column of the div - note that the div is to the right of the div it is inside, so the text will be centered in their box, to the right of the div they are inside */
+    height: 10vh;
+}
+
+
+.logo {
+    width: 20%;
+    /* This will make the logo's div take up 20% of the width of the parent div  */
+    margin-left: 3%;
+    /* This will move the logo over from the left by 3% of the parent div's width (the master width set by * selector of 100% of the browser) So it will be 3% from the left of the screen being used. */
+}
+
+.links {
+    width: 50%;
+    /* This will make the links nav bar take up 50% of the width of the parent div  */
+    display: flex;
+    /* This will make the links div a FLEXBOX */
+    justify-content: space-evenly;
+    /* This will space all of the content (items) inside of the div, evenly */
+    align-items: center;
+    /* This will align all of the items to the verticle (left to right) center of the div */
+}
+
+/* Top Section Styles */
+
+#top {
+    height: 85vh;
+    /* This will make the image's zoom, 85% of the Viewport Height (vh)  */
+    background-image: url(../images/header.jpg);
+    /* Imports the background image  */
+    margin-top: 5%;
+    background-size: cover;
+    /* This will make the background image cover the size of the viewport (the whole browser's window) */
+    background-repeat: no-repeat;
+    /* Stops the image from tiling */
+    background-position: center top;
+    /* Centers the image and aligns it with the TOP of the div so that the zoom effect above can work properly and the top of the cow's head isn't cut off */
+    display: flex;
+    /* Makes this div a FLEXBOX */
+    align-items: center;
+    /* This will align all of the items to the verticle (left to right) center of the div */
+    justify-content: center;
+    /* This will space all of the content (items) inside of the div, evenly */
+}
+
+
+
+/* Farm Section styles */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.box {
+    width:  20%;
+    /* NOTE that the 4 boxes are within the container, and we want 2 rows of 2 (to look like a cross-framed window) so 100 divided by 4 is 25 (%), but we want some space between them and the margin, so we set it to 20% */
+    border: 3px solid#4F4F4F;
+    text-align: center;
+    padding: 4%;
+    background-color: #fff
+}
+
+.box h3 {
+    margin: 15% 0;
+    /* (Height, Width) This will add a small 15% margin (of the whole height) to the div's box. So the h3 heading will have a small gap between the words and the clipart  */
+
+}
+
+/* Blank Section Styles */
+
+.hero-image {
+    height: 40vh;
+    /* It is a background image so it has to be given a height to float below the nav bar and top section */
+    background-image: url('../images/dirt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* About Section Styles */
+
+#about {
+    display : flex;
+    /* Displays the id section specified (#) as a FLEXBOX */
+    justify-content: center;
+}
+
+.text {
+    width: 60%;
+    /* The text will be 60% of the browser's width */
+    border: 3px solid #4f4f4f;
+    background-color: #fff;
+    text-align: center;
+    padding: 4%;
+}
+
+.text p {
+    text-align: left;
+}
