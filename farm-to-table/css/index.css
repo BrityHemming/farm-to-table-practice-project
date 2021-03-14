@@ -3,7 +3,7 @@
     padding: 0%;
     margin: 0%;
     max-width: 100%;
-    /* border:1px solid gray;     comment this out when done*/
+    border:1px solid gray;  
 }
 
 /* General Sytles */
@@ -274,5 +274,95 @@ nav.main a{
 
 }
 
+/* media queries */
+
+/* Tablet */
+@media (max-width: 800px){
+.links{
+    width: 70%;
+}
+#about.text{
+    width: 80%;
+}
+.gallery div .hide {
+    background-color: #fff;
+    display:block;
+    width: 70%;
+}
+.gallery div .hide h2{
+    font-size: 2.2rem;
+}
+.contact-info{
+    width: 50%;
+}
+.image-container{
+    width: 80%;
+}
+.left{
+    width: 60%;
+}
+.right{
+    width: 40%;
+}
+}
 
 
+/* Phone */
+
+@media (max-width: 500px){
+    header nav{
+        flex-direction: column;
+        height: 18vh;
+    }
+    .links{
+        width: 100%;
+    }
+    .logo{
+        text-align: center;
+    }
+    .titles{
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .container{
+        flex-wrap:wrap;
+    
+    }
+    .box{
+    width:90% ;
+    margin: 4% 0;
+    }
+    #about.text{
+        width: 90%;
+    }
+    .gallery div{
+        width: 90%;
+    }
+    #contact{
+        justify-content: center;
+    }
+    .left, .right{
+        width: 90%;
+    }
+    .right{
+        order:-1;
+    }
+    #contact h2{
+        order:-2;
+    }
+.image-container{
+    width: 90%;
+}
+.contact-info{
+    width: 90%;
+}
+footer{
+    flex-wrap: wrap;
+}
+footer div{
+    width: 90%;
+    margin: 4% 0;
+}
+.copyright{
+    justify-content: flex-start;
+}
+}
