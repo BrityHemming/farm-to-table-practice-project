@@ -1,0 +1,137 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    border:1px solid grey;
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    color:#4f4f4f;
+    line-height:1.5;
+    font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
+}
+h1, h2, h3{
+    font-family: 'Nunito', sans-serif;
+    text-align:center;
+}
+h1{
+    font-size:5rem;
+}
+h2{
+    font-size:3.5rem;
+}
+h3{
+    font-size:2.5rem;
+}
+section{
+    padding:4% 0;
+}
+a{
+    text-decoration:none;
+    color:#4f4f4f;
+}
+/*Header Section Styles*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.logo{
+    width:10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width:50%;
+}
+.link{
+    width:60%;
+    display:flex;
+    justify-content: space-evenly;
+}
+/*Top Section Styles*/
+#top{
+    height:90vh;
+    background-image:url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Farm styles*/
+.container{
+    display:flex;
+    justify-content: space-around;
+}
+.box{
+    border: 3px solid grey;
+    padding:4%;
+    width:20%;
+    margin:4% 0;
+    background-color:#fff;
+}
+/*empty section*/ 
+.hero-img{
+    background-image: url('../images/dirt.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    height:40vh;
+}
+/*About Section*/
+.text{
+    width:80%;
+    border:3px solid grey;
+    background-color: #fff;
+    padding:4%;
+    margin:0 auto;
+}
