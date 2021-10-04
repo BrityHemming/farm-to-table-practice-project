@@ -215,3 +215,70 @@ footer a:hover{
     align-items:flex-end
 }
 
+/*Media Queries*/ 
+/*
+when we are building desktop first and scaling down we use max-width
+when we are building mobile first and scaling up we use min-width
+*/
+@media(max-width:500px){
+/*apply these styles to any screen that is 500px or smaller*/
+/*header section Styles*/
+    nav.main{
+        flex-direction:column;
+        justify-content: center;
+    }
+    .links{
+        width:100%;
+    }
+    /*Top Section Styles*/
+    #top{
+        margin-top:15%;
+    }
+    .titles{
+        color:#fff;
+    }
+    /*Farm Section Styles*/
+    .container{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .box{
+        width:90%;
+        margin:2% 0;
+        padding:8%;
+    }
+    /*About Section Styles*/
+    .text{
+        width:90%;
+    }
+    /*gallery section styles*/
+    .gal-img{
+        width:90%;
+    }
+    .hide{
+        display:block;
+        width:40%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*contact section*/
+   .left, .right{
+       width:100%;
+   }
+   .left{
+       order:1;
+   }
+   footer{
+       flex-direction:column;
+       justify-content: center;
+       align-items: center;
+   }
+   footer div{
+       width:90%;
+   }
+   .copyright{
+       justify-content: center;
+       align-items: center;
+   }
+}/*this closes the media query*/
