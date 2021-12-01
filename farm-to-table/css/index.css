@@ -1,0 +1,94 @@
+/*CSS Reset - aims to wipe default browser styles clean*/
+*{
+    box-sizing: border-box; /*when a box is given a width, if we add padding or border apply it within the given width not in addition to it.*/
+    padding:0;
+    margin:0;
+    max-width:100%; /*this helps us when we get to responsive design. You can never be bigger than your parent. It helps with images that like to break outside of their wrappers*/
+    border:1px solid grey;
+}
+
+html{ /*with rems everything is based off of this font-size set on the HTML*/
+    font-size:62.5%; /*this means that 1 rem === 10px */
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5; /*line height you never give a unit of mesurment to - it takes the font-size and it multiplies it to add space between the lines*/
+    color:#4f4f4f;
+    font-family: 'PT Sans', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size:6rem;
+}
+h2{
+    font-size:3rem;
+}
+h3{
+    font-size:2.5rem;
+}
+i{
+    font-size:5rem;
+}
+a{
+    text-decoration: none;
+    color: #4f4f4f;
+    transition:2s;
+}
+a:hover{
+    color:#fcb131;
+}
+section{
+    padding:4% 0;
+}
+
+/*Header Section Styles*/
+header nav{
+    display:flex;
+    justify-content: space-between;
+    padding:2% 0;
+    position: fixed;
+    width:100%;
+    z-index:999;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+.links{
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width:8%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    display:inline-block; /*this is the only time I use inline-block in the real world*/
+    width:20%;
+    text-align:center;
+    padding:2% 4%;
+    border-radius:10px; /*its okay to use px for something this small*/
+    background-color:#fcb131;
+    color:#fff;
+    transition:2s;
+    border:3px solid #fcb131;
+}
+.button:hover{
+    background-color:#fff;
+    color: #fcb131;
+}
+/*top section styles*/
+#top{
+    height:90vh;
+    background-image:url('../images/header.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:8%;
+}
