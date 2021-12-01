@@ -129,3 +129,57 @@ header nav{
     text-align:center;
 }
 
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.farm{
+    width:40%;
+    height:40vh;
+    margin:2% 0;
+    background-image: url('../images/barn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cooking{
+    width:40%;
+    height:40vh;
+    margin:2% 0;
+    background-image:url('../images/cook.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.produce{
+    width:40%;
+    height:40vh;
+    margin:2% 0;
+    background-image:url('../images/produce.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.animals{
+    width:40%;
+    height:40vh;
+    margin:2% 0;
+    background-image:url('../images/sheep.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hide{
+    width:100%;
+    height:40vh;
+    background-color:rgba(255, 255, 255, 0.8);
+    display:none;
+}
+.gallery div:hover .hide{
+    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
