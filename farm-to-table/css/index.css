@@ -4,7 +4,7 @@
     padding:0;
     margin:0;
     max-width:100%; /*this helps us when we get to responsive design. You can never be bigger than your parent. It helps with images that like to break outside of their wrappers*/
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 
 html{ /*with rems everything is based off of this font-size set on the HTML*/
@@ -54,6 +54,7 @@ header nav{
     width:100%;
     z-index:999;
     background-color:rgba(255, 255, 255, 0.8);
+    top:0;
 }
 .links{
     width:50%;
@@ -158,7 +159,7 @@ header nav{
     margin:2% 0;
     background-image:url('../images/produce.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /*stops the tiling effect on large screens*/
     background-position: center;
 }
 .animals{
@@ -182,4 +183,68 @@ header nav{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+/*contact section*/
+#contact{
+    display:flex;
+    flex-wrap:wrap;
+}
+#contact h2{
+    width:100%;
+}
+.left, .right{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:4% 0;
+}
+.left div h3{
+    text-align:left;
+}
+.left div{
+    width:50%;
+    line-height:2.5;
+}
+.right img{
+    width:80%;
+}
+
+/*footer section styles*/
+footer{
+    background-color:#fcb131;
+    color:#fff;
+    display:flex;
+    justify-content: space-around;
+    padding:4% 0;
+}
+footer div{
+    width:30%;
+}
+footer h3{
+    margin-bottom:2%;
+}
+.social{
+    display:flex;
+    justify-content: space-evenly;
+}
+.footerNav{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.footerNav a{
+    margin:2% 0;
+}
+footer nav a{
+    color:#fff;
+}
+footer nav a:hover{
+    color:#4f4f4f;
+}
+.copyright{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
