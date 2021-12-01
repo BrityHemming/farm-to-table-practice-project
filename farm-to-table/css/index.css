@@ -15,6 +15,7 @@ body{
     line-height:1.5; /*line height you never give a unit of mesurment to - it takes the font-size and it multiplies it to add space between the lines*/
     color:#4f4f4f;
     font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
 }
 h1, h2, h3{
     font-family: 'Nunito', sans-serif;
@@ -92,3 +93,39 @@ header nav{
     align-items: center;
     margin-top:8%;
 }
+
+/*Farm Fresh Section*/
+.container{
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    margin:4% 0;
+}
+
+.container div{
+    width:21%;
+    padding:4%;
+    border:3px solid #4f4f4f;
+    background-color:#fff;
+}
+
+/*empty section*/ 
+.bg-img{
+    background-image:url('../images/dirt.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:40vh;
+    background-attachment: fixed;
+}
+
+/*About Section*/
+#about div{
+    width:60%;
+    margin:0 auto;
+    padding:4%;
+    background-color:#fff;
+    border:3px solid #4f4f4f;
+    text-align:center;
+}
+
