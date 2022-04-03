@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    max-width: 100%;
+    border:1px solid gray;  
+}
+
+/* General Sytles */
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #fffafa;
+
+}
+
+h1, h2 ,h3, h4{
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+
+section{
+    padding: 4% 0;
+}
+a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+}
+
+a:hover{
+    color:#fcb131;
+}
+
+i{
+    font-size: 5rem;
+}
+/* coding below this line */
+
+/* header section style */
+
+header nav{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color:rgba(255, 255,255, 0.8); /* rgba means red, green,blue and the 0.8 makes it more transparent a 1.0 would make it solid*/
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+
+}
+.logo{
+    width: 20%;
+    margin-left: 3%;
+}
+.links{
+    width: 50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ 
+/* top section styles */
+
+
+#top{
+    height: 85vh;
+    background-image: url('../images/header.jpg');
+    margin-top: 5%;
+    background-size: cover; /* this says to fill the element*/
+    background-repeat: no-repeat; /* this says if its a massive screen size and image is too small dont repeat the image to fill*/
+    background-position: center top;
+    display:flex;
+    align-items: center; /* alings items on the x axis */
+    justify-content: center; /* aligns items on the main axis */
+
+}
+
+/* farm section styles */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top:5% ;
+
+}
+
+.box{
+    width: 20%;
+    border:3px solid #4f4f4f;
+    text-align: center;
+    padding: 4%;
+    background-color: 3px solid #fff;
+}
+h3{
+    margin: 15% 0;
+}
+
+/* blank section styyles */
+
+.hero-image{
+    height: 40vh;
+background-image: url('../images/dirt.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed; /*this keeps it in position when scrolling over it*/
+background-repeat: no-repeat;
+
+}
+
+/* about section styles */
+
+#about{
+    display:flex;
+    justify-content: center;
+}
+
+.text{
+    width: 60%;
+    border: 3px solid #4F4F4F;
+    background-color: #fff;
+    text-align: center;
+    padding: 4%;
+}
+.text p{
+    text-align: left;
+}
+
+/* gallery section */
+
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.gallery div{  /*better to write code just once instead of multiple times*/
+    width: 40%;
+    height: 40vh;
+    margin:4% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+   align-items: flex-end;
+}
+.gallery div .hide {
+    height: 10vh;
+    background-color: #fff;
+    display:none;
+}
+
+.gallery div:hover .hide{
+   display:block;
+}
+
+.farm{
+    background-image: url('../images/barn.jpg');
+}
+
+.cook{
+    background: url('../images/cook.jpg');
+}
+
+.produce{
+    background-image: url('../images/produce.jpg');
+}
+
+.animals{
+    background-image: url('../images/sheep.jpg');
+}
+
+/* contact section */
+
+#contact{
+display:flex;
+flex-wrap:wrap;
+
+}
+
+#contact h2{
+    width:100%;
+}
+
+.left, .right{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 4% 0;
+}
+
+.contact-info{
+    width: 35%;
+    line-height:2;
+   
+}
+
+.contact-info h3{
+    text-align: left;
+}
+
+
+.image-container{
+    width: 70%;
+}
+
+/* footer css */
+
+footer{
+    background-color: #fcb131;
+    display:flex;
+    justify-content: space-around;
+    color:#fff;
+    padding: 2% 0;
+}
+
+footer a {
+    color:#fff;
+}
+
+footer a:hover{
+    color:#4f4f4f;
+}
+
+footer div{
+    width: 30%;
+
+}
+
+nav.social{
+    display:flex;
+    justify-content: space-between;
+}
+
+nav.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   
+}
+nav.main a{
+    margin: 2% 0;
+}
+
+
+
+.copyright{
+    display:flex;
+    justify-content:flex-end;
+   align-items: flex-end;
+
+}
+
+/* media queries */
+
+/* Tablet */
+@media (max-width: 800px){
+.links{
+    width: 70%;
+}
+#about.text{
+    width: 80%;
+}
+.gallery div .hide {
+    background-color: #fff;
+    display:block;
+    width: 70%;
+}
+.gallery div .hide h2{
+    font-size: 2.2rem;
+}
+.contact-info{
+    width: 50%;
+}
+.image-container{
+    width: 80%;
+}
+.left{
+    width: 60%;
+}
+.right{
+    width: 40%;
+}
+}
+
+
+/* Phone */
+
+@media (max-width: 500px){
+    header nav{
+        flex-direction: column;
+        height: 18vh;
+    }
+    .links{
+        width: 100%;
+    }
+    .logo{
+        text-align: center;
+    }
+    .titles{
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .container{
+        flex-wrap:wrap;
+    
+    }
+    .box{
+    width:90% ;
+    margin: 4% 0;
+    }
+    #about.text{
+        width: 90%;
+    }
+    .gallery div{
+        width: 90%;
+    }
+    #contact{
+        justify-content: center;
+    }
+    .left, .right{
+        width: 90%;
+    }
+    .right{
+        order:-1;
+    }
+    #contact h2{
+        order:-2;
+    }
+.image-container{
+    width: 90%;
+}
+.contact-info{
+    width: 90%;
+}
+footer{
+    flex-wrap: wrap;
+}
+footer div{
+    width: 90%;
+    margin: 4% 0;
+}
+.copyright{
+    justify-content: flex-start;
+}
+}
